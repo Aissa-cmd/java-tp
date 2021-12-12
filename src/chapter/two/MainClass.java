@@ -19,6 +19,10 @@ public class MainClass {
         p[3] = new Personne("nom4", "prenom4", 19);
 
         show(p);
+
+        System.out.println();
+
+        System.out.println("Le nombre des Etudiant est: " + countEtudiant(p));
     }
 
     public static void show(Personne... args) {
@@ -26,5 +30,15 @@ public class MainClass {
             p.Afficher();
             System.out.println();
         }
+    }
+
+    public static int countEtudiant(Personne... args) {
+        int numEtudiant = 0;
+        for(Personne p: args) {
+            if(p instanceof Etudiant) {
+                numEtudiant++;
+            }
+        }
+        return numEtudiant;
     }
 }
