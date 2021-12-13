@@ -1,5 +1,11 @@
 package chapter.one.ma.esta;
 
+/**
+* This file contains the Personne class
+* to view the entire project go to {@link https://github.com/Aissa-cmd/java-tp}
+* @author Aissa Ouboukioud
+*/
+
 import java.util.Objects;
 
 public class Personne {
